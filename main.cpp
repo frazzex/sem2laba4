@@ -14,31 +14,33 @@ void task1() {
     cout << "Введите комплексное число (2 параметра):" << endl;
     cin >> complex3;
 
-    cout << "----------" << endl;
+    cout << "----- Доступные комплексные числа -----" << endl;
     cout << "Комплексное число №1: " << complex1 << endl;
     cout << "Комплексное число №2: " << complex2 << endl;
     cout << "Комплексное число №3: " << complex3 << endl;
-    cout << "Комплексное число №4 (копия комплексного №2: " << complex4 << endl;
-    cout << "----------" << endl << endl;
+    cout << "Комплексное число №4 (копия комплексного №2): " << complex4 << endl << endl;
 
-    cout << "complex1 + complex2 = " << complex1 + complex2 << endl;
-    cout << "complex1 - complex2 = " << complex1 - complex2 << endl;
-    cout << "complex1 / complex2 = " << complex1 / complex2 << endl;
-    cout << "complex1 * complex2 = " << complex1 * complex2 << endl;
-    cout << "----------" << endl << endl;
+    cout << "----- Арифметические операции над числами -----" << endl;
+    cout << complex1 << " + " << complex2 << " = " << complex1 + complex2 << endl;
+    cout << complex1 << " - " << complex2 << complex1 - complex2 << endl;
+    cout << complex1 << " * " << complex2 << complex1 * complex2 << endl;
+    cout << complex1 << " / " << complex2 << complex1 / complex2 << endl << endl;
 
-    cout << "++complex1 = " << ++complex1 << endl;
-    cout << "complex1++ = " << complex1++ << endl;
-    cout << "complex1 = " << complex1 << endl;
-    cout << "--complex1 = " << --complex1 << endl;
-    cout << "complex1-- = " << complex1-- << endl;
-    cout << "complex1 == " << complex1 << endl;
-    cout << "----------" << endl << endl;
+    cout << "----- Операции инкремента и декремента над числом " << complex1 << " -----" << endl;
 
-    cout << "complex1 > complex2 : " << (complex1 > complex2 ? "Да" : "Нет") << endl;
-    cout << "complex1 < complex2 : " << (complex1 < complex2 ? "Да" : "Нет") << endl;
-    cout << "complex1 == complex2 : " << (complex1 == complex2 ? "Да" : "Нет") << endl;
-    cout << "complex1 != complex2 : " << (complex1 != complex2 ? "Да" : "Нет") << endl;
+    cout << "++complex = " << ++complex1 << endl;
+    cout << "complex++ = " << complex1++ << endl;
+    cout << "complex = " << complex1 << endl;
+    cout << "--complex = " << --complex1 << endl;
+    cout << "complex-- = " << complex1-- << endl;
+    cout << "complex = " << complex1 << endl << endl;
+
+    cout << "----- Логические операции -----" << endl;
+
+    cout << complex1 << " > " << complex2 << " --- Ответ: " << (complex1 > complex2 ? "Да" : "Нет") << endl;
+    cout << complex1 << " < " << complex2 << " --- Ответ: " << (complex1 < complex2 ? "Да" : "Нет") << endl;
+    cout << complex1 << " == " << complex2 << " --- Ответ: " << (complex1 == complex2 ? "Да" : "Нет") << endl;
+    cout << complex1 << " != " << complex2 << " --- Ответ: " << (complex1 != complex2 ? "Да" : "Нет") << endl;
 }
 
 void task2() {
@@ -80,8 +82,8 @@ void task2() {
     cout << rational1 << endl << endl;
 
     cout << "----- Операторы сравнения -----" << endl;
-    cout << rational1 << " == " << rational2 << "? Ответ: " << (rational1 == rational2 ? "Да" : "Нет") << endl;
-    cout << rational1 << " != " << rational2 << "? Ответ: " << (rational1 != rational2 ? "Да" : "Нет") << endl << endl;
+    cout << rational1 << " == " << rational2 << " --- Ответ: " << (rational1 == rational2 ? "Да" : "Нет") << endl;
+    cout << rational1 << " != " << rational2 << " --- Ответ: " << (rational1 != rational2 ? "Да" : "Нет") << endl << endl;
 
     cout << "----- Унарные операторы -----" << endl;
     cout << "Оператор + : +" << rational1 << " = " << +rational1 << endl;
@@ -91,7 +93,7 @@ void task2() {
 int main() {
     system("chcp 65001");
     setlocale(LC_ALL, "ru");
-    task2();
+    task1();
 
     return 0;
 }
