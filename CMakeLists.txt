@@ -7,4 +7,6 @@ add_executable(laba4_2026 main.cpp
         task1/Complex.cpp
         task1/Complex.h
         task1/Complex.cpp
+        task2/Rational.cpp
+        task2/Rational.h
 )
